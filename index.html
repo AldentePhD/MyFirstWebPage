@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./main.css">
+    <title>Как я вёрстку постигал</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <div id="nickname">
+                <span>@AldentePhD</span>
+            </div>
+
+            <div>
+                <nav class="header_btns">
+                    <a href="#">мои работы</a>
+                    <a href="#">обо мне</a>
+                    <a href="#">контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Содержательная часть -->
+        <section style="background-color: #07203F;">
+            <!-- ИНТРО -->
+            <div class="universal_wrapper">
+                <div class="intro_wrapper">
+                    <div class="intro">
+                        <h1 id="header_about_me">Я - фронтендер</h1>
+                        <p id="text_aboutme">Какая-то очень интересная информация обо мне, из которой видно, насколько я
+                            нереально крут.</p>
+                        <button id="btn_aboutme">Связаться со мной</button>
+                    </div>
+
+                    <div class="intro">
+                        <img id="myface" src="./resources/qKtLeVliNk1.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="my_skills_section_bg">
+            <!-- Я УМЕЮ -->
+            <div class="universal_wrapper">
+                <div>
+                    <h1 class="major_header" style="color: rgb(255, 255, 255);">я умею</h1>
+
+                    <div id="my_skills">
+                        <div class="skill_box">
+                            <div id="html_skill">
+                                <img src="https://avatars.mds.yandex.net/get-altay/11381866/2a0000018c59036deca36e60afe35279ef96/orig"
+                                    alt="" />
+                            </div>
+                            <div id="html_text_box_color" class="skill_text_box">
+                                <p class="skill_text">HTML</p>
+                            </div>
+                        </div>
+
+                        <div class="skill_box">
+                            <div id="css_skill">
+                                <img src="https://i.pinimg.com/originals/5e/06/3c/5e063c477e797d46fc6edb6c9fa10bf4.webp"
+                                    alt="" />
+                            </div>
+                            <div id="css_text_box_color" class="skill_text_box">
+                                <p class="skill_text">CSS</p>
+                            </div>
+                        </div>
+
+                        <div class="skill_box">
+                            <div id="js_skill">
+                                <img src="https://i.pinimg.com/originals/42/7f/83/427f83091de91949a2fc4f8b9b294582.jpg"
+                                    alt="" />
+                            </div>
+                            <div id="js_text_box_color" class="skill_text_box">
+                                <p class="skill_text">JS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: rgb(8, 19, 58);">
+            <!-- МОИ ПРОЕКТЫ -->
+            <div class="universal_wrapper">
+                <h1 class="major_header" style="color: rgb(255, 255, 255);">мои проекты</h1>
+
+                <div id="projects_list">
+                    <div class="single_row">
+                        <div id="project_image">
+                            <img src="https://a.d-cd.net/m8AAAgLYl-A-1920.jpg" alt="" />
+                        </div>
+                        <div class="description_box">
+                            <h2 class="project_header">работа 1</h2>
+                            <p class="descrition_text">Здесь могла бы быть клёвая работа, но она ещё не сделана.</p>
+                        </div>
+                    </div>
+
+                    <div class="single_row reverse">
+                        <div id="project_image">
+                            <img src="https://i.ytimg.com/vi/sFxtVvxPXXQ/maxresdefault.jpg" alt="" />
+                        </div>
+                        <div class="description_box">
+                            <h2 class="project_header">работа 2</h2>
+                            <p class="descrition_text">Тут тоже могла бы быть крутая работа, но бог ещё не послал идею в
+                                мою светлую голову.</p>
+                        </div>
+                    </div>
+
+                    <div class="single_row">
+                        <div id="project_image">
+                            <img src="https://cdnb.artstation.com/p/assets/images/images/052/055/741/large/ali-el-khazali-cross-handed.jpg"
+                                alt="" />
+                        </div>
+                        <div class="description_box">
+                            <h2 class="project_header">работа 3</h2>
+                            <p class="descrition_text">Какое классное пустое место для очередной крышесносной работы!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section style="background-color: #EADED4; padding-bottom: 150px;">
+            <!-- ЗАЯВКА -->
+            <div class="universal_wrapper">
+                <h1 class="major_header" style="color: #333333;">ОСТАВЬТЕ ЗАЯВКУ</h1>
+                <form>
+                    <div id="request_form">
+                        <input class="field" type="text" placeholder="Введите имя">
+                        <input class="field" type="email" placeholder="Введите почтовый адрес">
+                        <input class="field" type="number" placeholder="Введите телефон">
+                        <div id="buttons">
+                            <button class="request_btn">Очистить</button>
+                            <button class="request_btn">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="contacts_section_bg" style="padding-bottom: 180px;">
+            <!-- КОНТАКТЫ -->
+            <div class="universal_wrapper">
+                <h1 class="major_header">контакты</h1>
+
+                <div id="contacts_box">
+                    <div class="contact" style="background-color: #07203F;">
+                        <h2 class="contant_name">github</h2>
+                        <button class="contact_btn" href="">ПЕРЕЙТИ</button>
+                    </div>
+                    <div class="contact" style="background-color: #D9AA90;">
+                        <h2 class="contant_name">telegram</h2>
+                        <button class="contact_btn" href="">ПЕРЕЙТИ</button>
+                    </div>
+                    <div class="contact" style="background-color: #07203F;">
+                        <h2 class="contant_name">телефон</h2>
+                        <button class="contact_btn">ПОКАЗАТЬ</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Подвал -->
+        <div class="header_container">
+            <div id="nickname">
+                <span>@AldentePhD</span>
+            </div>
+
+            <div>
+                <nav class="header_btns">
+                    <a href="#">мои работы</a>
+                    <a href="#">обо мне</a>
+                    <a href="#">контакты</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

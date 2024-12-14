@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/************************************************/
+/*************** Стили для хедера ***************/
+header {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.header_container {
+    height: 154px;
+
+    background-color: #07203F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 150px;
+}
+
+.header_btns {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: solid;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+
+    text-transform: uppercase;
+}
+
+#nickname {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+
+/************************************************/
+/************ Универсальный контейнер ***********/
+.universal_wrapper {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    position: relative;
+}
+
+/************************************************/
+/************ Стили для секции ОБО МНЕ **********/
+.intro_wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    height: 800px;
+}
+
+.intro {
+    justify-content: space-around;
+}
+
+#header_about_me, #text_aboutme, #btn_aboutme {
+    width: 605px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header_about_me {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 64px;
+    color: rgb(255, 255, 255);
+
+    text-transform: uppercase;
+
+    padding-bottom: 30px;
+}
+
+#text_aboutme, .descrition_text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+}
+
+#text_aboutme { padding-bottom: 30px; }
+
+#btn_aboutme {
+    height: 106px;
+    
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: solid;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+
+    text-transform: uppercase;
+
+    background: white;
+    border-style: none;
+    border-radius: 53px;
+}
+
+#btn_aboutme:hover {
+    background: rgb(58, 186, 236);
+}
+
+#myface {
+    object-fit: cover;
+    width: 516px;
+    height: 516px;
+
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
+/************************************************/
+/****** Фоновая картинка для второй секции ******/
+#my_skills_section_bg {
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/1647720697112916907/9849BE7FFE0C64837C2E6518918D84BD7228FA6D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+    width: 100%;
+}
+
+/************************************************/
+/********** Стили для секции "Я УМЕЮ" ***********/
+.major_header, .skill_text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.major_header {
+    font-size: 72px;
+
+    padding-top: 135px;
+    padding-bottom: 50px;
+}
+
+.skill_text {
+    font-size: 64px;
+
+    /* Это костыль. Нужно будет переделать. */
+    width: 350px;
+    max-height: 125px;
+
+    vertical-align: middle;
+}
+
+#my_skills {
+    height: 100%;
+    max-width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 100px;
+
+    margin-top: 20px;
+    padding-bottom: 10%;
+}
+
+.skill_box {
+    height: 350px;
+    width: 350px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: white;
+
+    box-sizing: border-box;
+}
+
+#html_skill, #css_skill, #js_skill {
+    position: relative;
+    width: 100%;
+    height: 225px;
+}
+
+#html_skill img, #css_skill img, #js_skill img {
+    height: 225px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skill_text_box {
+    width: 100%;
+
+    /* Это костыль. Нужно будет переделать. */
+    padding-top: 21px;
+    padding-bottom: 20px;
+}
+
+#html_text_box_color {
+    background-color: rgb(129, 41, 0);
+}
+
+#css_text_box_color {
+    background-color: rgb(0, 3, 177);
+}
+
+#js_text_box_color {
+    background-color: rgb(236, 144, 24);
+}
+
+/************************************************/
+/******** Стили для секции "МОИ РАБОТЫ" *********/
+#projects_list {
+    width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.single_row {
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 80px;
+}
+
+#project_image {
+    /* Это костыль - нужно будет переделать */
+    object-fit: cover;
+    width: 48%;
+}
+
+#project_image img {
+    object-fit: cover;
+    width: 100%;
+    height: 366px;
+}
+
+.project_header, .contant_name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+
+    text-transform: uppercase;
+}
+
+.description_box {
+    width: 42.5%;
+    max-height: 100%;
+    flex-direction: column;
+    display: grid;
+    align-items: center;
+}
+
+.project_header {
+    margin-bottom: -60px;
+}
+
+.descrition_text {
+    margin-top: -60px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/************************************************/
+/********** Стили для секции с заявкой **********/
+#request_form {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.field {
+    width: 630px;
+    height: 100px;
+
+    background-color: #EADED4;
+
+    margin: 20px auto;
+    padding: 25px 30px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+#buttons {
+    width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.request_btn {
+    width: 265px;
+    height: 70px;
+    
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 36px;
+    color: rgb(0, 0, 0);
+}
+
+/************************************************/
+/********* Стили для секции с контактами ********/
+#contacts_section_bg {
+    background-image: url("https://steamuserimages-a.akamaihd.net/ugc/773987590633968435/99FCD107178B2557707FEBFBDF8E39CBEBE5A533/?imw=512&amp;imh=288&amp;ima=fit&amp;impolicy=Letterbox&amp;imcolor=%23000000&amp;letterbox=true");
+    width: 100%;
+}
+
+#contacts_box {
+    width: 1170px;
+    margin: 0px auto;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact {
+    width: 350px;
+    height: 350px;
+}
+
+.contact_btn {
+    width: 300px;
+    height: 70px;
+
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    
+    border-radius: 35px;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    background-color: #D9D9D9;
+}
+
+.contant_name {
+    text-align: center;
+
+    margin-top: 112px;
+}
